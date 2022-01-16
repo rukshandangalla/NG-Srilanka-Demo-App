@@ -1,0 +1,8 @@
+<p-card header="{{categoryItem.name}}" [style]="{width: '250px'}" styleClass="p-card-shadow">
+    <ng-template pTemplate="header">
+        <img src="{{categoryItem.icons[0].url}}">
+    </ng-template>
+    <ng-template pTemplate="footer">
+        <p-button label="View More" (onClick)="viewMoreDetails($event)"></p-button>
+    </ng-template>
+</p-card>

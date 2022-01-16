@@ -1,0 +1,15 @@
+<div class="header">
+    <div class="grid nogutter">
+        <div class="col-1">
+            <img class="header-logo" src="assets/NG-SL_LOGO.png">
+        </div>
+        <div class="col">
+            <h3 *ngIf="nowPlaying !== ''" class="header-text">
+                NOW Playing: <span style="color: red;">{{nowPlaying}}</span>
+            </h3>
+            <h3 *ngIf="nowPlaying === ''" class="header-text">
+                No Playlist Selected
+            </h3>
+        </div>
+    </div>
+</div>
